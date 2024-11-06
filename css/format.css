@@ -1,3 +1,45 @@
+#textContainer {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%; /* Adjust width as needed */
+    height: 50%; /* Adjust height as needed */
+    overflow-y: scroll; /* Enables vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#textOverlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the overlay on the screen */
+    width: 80%; /* Set width for readability */
+    max-height: 60%; /* 2.5x height from previous example */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for blending */
+    color: white;
+    font-size: 16px;
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: left;
+    z-index: 10; /* Ensure it overlays other content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a floating effect */
+}
+
+
+
+#Txt {
+    font-size: 17px;
+    color: black; /* Adjust text color */
+    white-space: pre-wrap; /* Keeps line breaks and spaces */
+    text-align: left; /* Left-align text for readability */
+}
+
 #typeDiv {
 	position: absolute;
 	top: 45%;
